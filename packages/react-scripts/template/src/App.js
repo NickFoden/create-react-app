@@ -18,6 +18,14 @@ function App() {
         >
           Learn React
         </a>
+        <a
+          className="App-link"
+          href="https://docs.fauna.com/fauna/current/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn FaunaDB
+        </a>
       </header>
     </div>
   );
