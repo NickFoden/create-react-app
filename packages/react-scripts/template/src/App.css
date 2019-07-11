@@ -2,10 +2,18 @@
   text-align: center;
 }
 
+.App-links-span {
+  display: flex;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+#fauna-logo {
+  border-radius: 60px;
 }
 
 .App-header {
@@ -21,12 +29,17 @@
 
 .App-link {
   color: #61dafb;
+  margin: 5px 10px;
 }
 
+.App-link:hover {
+  opacity: 0.5;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
