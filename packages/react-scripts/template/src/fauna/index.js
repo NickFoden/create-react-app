@@ -1,12 +1,14 @@
 import faunadb, { query as q } from 'faunadb';
 
-//update the .env.example to be .env or add REACT_APP_FAUNA_KEY to your existing .env
+//First ! ! You will need a key for your fauna database
+//Go to FaunaDb https://dashboard.fauna.com/ and set up your account and a database and then create a key
+//Use your key to replace the placeholder text in .env.example
+//Then rename file  .env.example   to   .env
 
-//Initialize the client
+//To use fauna we initialize a client.
 const client = new faunadb.Client({ secret: process.env.REACT_APP_FAUNA_KEY });
 
-//Couple standard functions to get you started
-
+//And here are a few general functions written out as examples to get started
 const addNewClass = async newClass => {
   try {
     const ret = await client.query(q.CreateClass({ name: newClass }));
@@ -16,9 +18,9 @@ const addNewClass = async newClass => {
   }
 };
 
-//See the docs for the data object in this add record method. Examples show to add new items as { data: { title: "an object with the one field title of a new record" } }))
-//Writing out the object shape and having different "add record" functions can help enforce a schema for your records
-//But here we are taking an object and assigning it the name of data in an effort to make this function more flexible. **Up to us to pass it the same object shape each time or the shapes of our records may diverge
+//In addSingleRecord here below we are passing the relevant className and then the item as an object and assigning it the name of data in an effort to make this function reusable **This leaves it up to us to pass the same object shape or the shapes of our items will diverge
+//Writing multiple "add" functions like addUser addBook addWidget and having more explicit shape such as { data: { title: "" author:""}} can help you enforce a schema / uniform shape for your items
+//https://docs.fauna.com/fauna/current/howto/crud#creating-a-post
 const addSingleRecord = async (className, data) => {
   try {
     const ret = await client.query(q.Create(q.Class(className), { data }));

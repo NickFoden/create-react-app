@@ -1,4 +1,11 @@
 import React from 'react';
+// A few general fauna methods ready for use
+// import {
+//   addNewClass,
+//   addSingleRecord,
+//   deleteSingleRecordByRef,
+//   getSingleRecordByRef,
+// } from './fauna';
 import logo from './logo.svg';
 import './App.css';
 
