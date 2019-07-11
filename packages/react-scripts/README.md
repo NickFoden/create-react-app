@@ -2,7 +2,7 @@
 
 This package is a script that can be used with CRA - Create React App
 
-To use you run the regulare CRA command and append --scripts-version fauna-nf
+To use you run the regular CRA command and append --scripts-version fauna-nf
 
 This will set you up with a standard Create React App which includes a fauna folder and a file with some basic methods to get you started working with faunadb.
 
