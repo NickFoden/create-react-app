@@ -1,7 +1,7 @@
 {
-  "name": "react-scripts-foden",
-  "version": "0.0.3",
-  "description": "Nick's configuration and scripts for Create React App.",
+  "name": "fauna-nf",
+  "version": "0.0.4",
+  "description": "A fauna quick start configuration script for Create React App.",
   "repository": {
     "type": "git",
     "url": "https://github.com/NickFoden/create-react-app.git",
