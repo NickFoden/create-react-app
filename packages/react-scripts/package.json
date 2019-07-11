@@ -1,6 +1,6 @@
 {
   "name": "fauna-nf",
-  "version": "0.0.4",
+  "version": "0.0.41",
   "description": "A fauna quick start configuration script for Create React App.",
   "repository": {
     "type": "git",

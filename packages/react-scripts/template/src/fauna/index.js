@@ -1,6 +1,11 @@
 import faunadb, { query as q } from 'faunadb';
 
-//First ! ! You will need a key for your fauna database
+//First ! ! install faunadb either
+//yarn add faunadb
+//or
+//npm i faunadb
+
+//Second You will need a key for your fauna database
 //Go to FaunaDb https://dashboard.fauna.com/ and set up your account and a database and then create a key
 //Use your key to replace the placeholder text in .env.example
 //Then rename file  .env.example   to   .env
