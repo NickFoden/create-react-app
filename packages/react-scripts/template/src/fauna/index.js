@@ -27,7 +27,7 @@ const addNewCollection = async newCollection => {
 
 //In addSingleRecord here below we are passing the relevant collectionName and then the item as an object and assigning it the name of data in an effort to make this function reusable **This leaves it up to us to pass the same object shape or the shapes of our items will diverge
 //Writing multiple "add" functions like addUser addBook addWidget and having more explicit shape such as { data: { title: "" author:""}} can help you enforce a schema / uniform shape for your items
-//https://docs.fauna.com/fauna/current/howto/crud#creating-a-post
+//https://docs.fauna.com/fauna/2.7.0/tutorials/crud#post
 const addSingleRecord = async (collectionName, data) => {
   try {
     const ret = await client.query(
