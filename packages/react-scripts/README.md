@@ -14,6 +14,12 @@ This will set you up with a standard Create React App which includes a fauna fol
 create-react-app new-app-name --scripts-version fauna-nf
 ```
 
+Prefer TypeScript? apend --typescript
+
+```javascript
+create-react-app new-app-name --scripts-version fauna-nf --typescript
+```
+
 After it completes you will need to run
 
 ```javascript
