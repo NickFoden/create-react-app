@@ -1,7 +1,7 @@
 import React from 'react';
 // A few general fauna methods ready for use
 // import {
-//   addNewClass,
+//   addNewCollection,
 //   addSingleRecord,
 //   deleteSingleRecordByRef,
 //   getSingleRecordByRef,
