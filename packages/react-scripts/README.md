@@ -1,5 +1,9 @@
 # fauna-nf
 
+### Now updated for use with FaunaDB 2.7
+
+("Collections" have replaced "Classes")
+
 This package is a script that can be used with CRA - Create React App
 
 To use you run the regular CRA command and append --scripts-version fauna-nf
